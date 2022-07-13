@@ -30,3 +30,10 @@ Route::controller(postController::class)->group(function (){
     Route::get('users/delete','showDelete');
 
 });
+/*                                     هي هي بس دي طريقة أقدم سيكا
+Route::get('users/data',[postController::class,'showUsers']);
+Route::get('users/grades',[postController::class,'showGrades']);
+Route::get('users/update',[postController::class,'showUpdate']);
+Route::get('users/insert',[postController::class,'showInsert']);
+Route::get('users/delete',[postController::class,'showDelete']);
+*/
