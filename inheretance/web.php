@@ -13,11 +13,3 @@ Route::get('links', function (){
     $username="Ahmed";
     return view("home");
 });
-//Route::post('users', function ( Request $request){
-//    //return view('users');
-//    return $request;
-//});
-//Route::get('users', function (){
-//    $username="Ahmed";
-//    return view("users",compact('username'));
-//});
