@@ -15,7 +15,10 @@ Route::get('/', function () {
 
 Route::get('posts',[postController::class,'posts']);
 Route::get('posts/create',[postController::class,'create']);
-Route::get('posts/show',[postController::class,'show']);
+Route::get('posts/show',[postController::class,'show'])->name('posts.show');
 Route::post('posts/insert',[postController::class,'insert'])->name('posts.insert');
-//Route::post('posts/insert',[postController::class,'insert']);
+Route::get('posts/edit/{id}',[postController::class,'edit'])->name('posts.edit');
+Route::post('posts/update/{id}',[postController::class,'update'])->name('posts.update');
+Route::get('posts/delete/{id}',[postController::class,'delete'])->name('posts.delete');
+Route::get('posts/delete',[postController::class,'deleteAll'])->name('posts.delete.all');
 
