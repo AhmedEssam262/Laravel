@@ -1,0 +1,12 @@
+@component('mail::message')
+# Welcome {{$user->name}}
+
+<h2 style="text-align: center;color: firebrick">Congratulations!</h2>
+This is a default email we send it to welcome you
+@component('mail::button', ['url' => ''])
+Clich Here
+@endcomponent
+
+Thanks,<br>
+{{ config('app.name') }}
+@endcomponent
